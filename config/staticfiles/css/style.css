@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin-top: 200px;
+}
+.container{
+    max-width: 760px;
+    margin: auto;
+}
+.title{
+    font-size: 25px;
+}
+.subtitle{
+    font-size: 20px;
+}
+.details{
+    font-size: 15px;
+    color: grey;
+}
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    background-color: lightskyblue;
+    color: #fff;
+}
+.header__title{
+    font-weight: 600;
+}
+.navigation__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation__item{
+    margin: 0px 5px;
+}
+.navigation__button{
+    padding: 7.5px 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(173, 216, 230, 1);
+    color: #fff;
+    cursor: pointer;
+}
+.hero__title{
+    width: 100%;
+    padding: 10px;
+    background-color: lightcyan;
+    border-bottom: 2px dashed white;
+}
+.hero__categories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.hero__categories--link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 2px 0.5px lightgray;
+    width: 24%;
+    height: 90px;
+    color: lightskyblue;
+}
+.hero__categories--link:hover{
+    color: orangered;
+}
+.hero__categories--link i{
+    font-size: 20px;
+}
+.movies__title{
+    background-color: rgb(235, 248, 248);
+    padding: 10px;
+    border-bottom: 2px dashed white;
+}
+.temp{
+    padding: 10px;
+}
+.temp li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px;
+    box-shadow: 0.5px 0.5px 2px 0.5px lightgray;
+    padding: 10px;
+    border-radius: 5px;
+}
+.temp__movie-info{
+    display: flex;
+    padding: 10px 0px;
+}
+.temp__movie-info span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.temp__details{
+    display: flex;
+}
+.temp__image{
+    width: 65px;
+    height: 80px;
+    margin-right: 10px;
+}
+.temp__rating-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+}
+.temp__rating-info i{
+    margin-bottom: 5px;
+}
+.temp__pages-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+.temp__pages--input{
+    margin: 0px 5px;
+    width: 60px;
+    padding: 5px;
+}
+.temp__pages--button{
+    padding: 10px;
+    border: none;
+    box-shadow: 0.5px 0.5px 2px 0.5px lightgray;
+    margin: 0px 10px;
+    border-radius: 2.5px;
+    cursor: pointer;
+}
+.temp__pages--button-2{
+    background-color: lightskyblue;
+    color: #fff;
+}
+.temp__pages--text{
+    width: 35px;
+    height: 35px;
+    box-shadow: 0.5px 0.5px 2px 0.5px lightgray;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.temp__pages--text:hover{
+    background-color: lightgray;
+}
+.footer-inner{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__right img:hover{
+    box-shadow: 0px 0px 2px 2px lightblue;
+}
+
+@media only screen and (max-width: 400px){
+    .temp li{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .temp__movie-info{
+        margin-bottom: 15px;
+    }
+    .temp__rating-info{
+        flex-direction: row;
+    }
+    .temp__rating-info i{
+        margin-right: 5px;
+        margin-bottom: 0px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .title{
+        font-size: 20px;
+    }
+    .subtitle{
+        font-size: 15px;
+    }
+    .details{
+        font-size: 13px;
+    }
+    .hero__categories--link{
+        font-size: 13px;
+    }
+    .temp__pages--text{
+        display: none;
+    }
+}
